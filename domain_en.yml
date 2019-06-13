@@ -1,0 +1,22 @@
+intents:
+  - today
+  - tomorrow
+  - in_two_days
+  - in_three_days
+  - in_four_days
+
+slots:
+  carac:
+    type: text
+
+actions:
+  - __main__.ActionGetToday
+  - __main__.ActionGetTomorrow
+  - __main__.ActionGetTwo
+  - __main__.ActionGetThree
+  - __main__.ActionGetFour
+  - utter_unclear
+
+templates:
+  utter_unclear:
+    - Sorry, I didn’t understand that.
